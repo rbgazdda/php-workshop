@@ -11,7 +11,7 @@ final class TodoTest extends TestCase
 {
     public function testNotAllowToChangeTitleForCompletedTask(): void
     {
-        $task = new Task(1, 'Some title');
+        $task = new Task(1, 'Some titlea');
         $task->complete();
 
         $this->expectException(\RuntimeException::class);
